@@ -1,29 +1,140 @@
 @import '_variables';
+@import '_fonts';
+
+html {
+    font-size: 16px;
+    font-family: Metropolis, sans-serif;
+}
 
 body {
     background-color: white;
-    color:$black
-}
+    color:$black;
+    font-family: Metropolis, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.667em;
 
+    
 h1 {
     font: 1.3rem;
+}
+h2 {
+    font-family: Metropolis, sans-serif;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 1.161em;
+    color: $black;
+}
+h3 {
+    color: $black;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.227em;
+}
+h6 {
+    letter-spacing: .06em;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Metropolis, sans-serif;
+    font-size: 18px;
+    line-height: 1.111em;
+    color:$base-color;
+    span {
+        color:$base-color;
+        font-weight:700;
+    }
 }
 p {
     font-size: 1.125rem;
     color: $darkgray;
+    font-family: Metropolis, sans-serif;
+    font-weight: 400;
+    line-height: 1.667rem;
 }
-a {
+.image-wrapper {
+    box-shadow: 0 14px 42px 0 rgba(16, 16, 16, .14);
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+.radius-24px {
+    border-radius: 24px;
+}
+.pl-15 {
+    padding-left: 18%;
+}
+.pr-15 {
+    padding-right: 18%;
+}
+.btn-outline-primary {
+            border: 1px solid #ededed;
+            background-color: white;
+            box-shadow: 0 2px 6px 0 rgba(16, 16, 16, .04);
+            color: $black;
+            text-align: center;
+            border-radius: 10px;
+            padding: 15px 24px;
+            font-weight: 500;
+            line-height: 1.111em;
+            transition: border-color .3s, background-color .3s, color .3s;
+            &:hover {
+                background-color: $base-color;
+                border-color: $base-color;
+            }
+    }
+    .btn-primary {
+        background-color: $base-color;
+        border-radius: 10px;
+        border-color: $base-color;
+        padding: 15px 24px;
+        font-weight: 700;
+        &:hover {
+                background-color: $base-color2;
+                border-color: $base-color2;
+        }
+    }
+}
 
-}
-nav {
+header {
+    padding: 32px 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 3px 12px rgba(18, 18, 18, .06);
+    z-index: 99;
     background-color: white;
-    padding: 1rem 0;
-    a {
-        color: $black;
+    nav.navbar.navbar-expand-lg {
         padding: 0;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.125em;
+    .navbar-brand {
+        img {
+            width: 161px;
+        }
+    }
+    
+   
+    #navbarNav {
+        background-color: white;
+        li {
+            padding-left: 13px;
+            padding-right: 13px;
+        
+        a {
+            color: $black;
+            padding: 0;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.125em;
+            &.active {
+                color: $base-color;
+            }
+        }
+        }
+        
+    }
     }
 }
 .page-section {
@@ -33,7 +144,25 @@ nav {
     .row {
         
     }
-    &.about_delivery, &.bg-gray {    
+    &.about_delivery .counter {
+        h3 {
+            color: $black;
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.179em;
+            span {
+                color:$base-color;
+                font-weight:700;
+            }
+        }
+        p {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 1.111em;
+        }
+    }
+    
+    &.bg-gray {    
         background-color: $gray;
     }
     .partners {
@@ -41,7 +170,7 @@ nav {
     }
     &.news {
         .newsText {
-            margin-bottom: 110px;
+            margin-bottom: 70px;
         }
         .card {
             padding: 98px 66px;
@@ -66,10 +195,41 @@ nav {
                 padding: 0;
             }
         }
+        .card-title {
+                color: $black;
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 1.429em;
+        }
+        .medium {
+            font-size: 20px;
+            line-height: 1.1em;
+            color:$darkgray;
+            font-weight: 500;
+        }
+        .link-text {
+            color:$base-color;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+    &.partners {
+        h5 {
+            color: $black;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.429em;
+        }
     }
 }
 
-
+footer {
+    .f1 {
+    border-bottom: 1px solid var(--neutral--400);
+    padding-top: 70px;
+    padding-bottom: 83px;
+    }
+}
 
 /* Override Bootstrap's default container width */
 @media (min-width: 1270px) {
