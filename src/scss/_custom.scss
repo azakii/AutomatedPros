@@ -1,0 +1,82 @@
+@import '_variables';
+
+body {
+    background-color: white;
+    color:$black
+}
+
+h1 {
+    font: 1.3rem;
+}
+p {
+    font-size: 1.125rem;
+    color: $darkgray;
+}
+a {
+
+}
+nav {
+    background-color: white;
+    padding: 1rem 0;
+    a {
+        color: $black;
+        padding: 0;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.125em;
+    }
+}
+.page-section {
+    padding-top: 70px;
+    padding-bottom: 106px;
+    
+    .row {
+        
+    }
+    &.about_delivery, &.bg-gray {    
+        background-color: $gray;
+    }
+    .partners {
+        margin-bottom: 110px;
+    }
+    &.news {
+        .newsText {
+            margin-bottom: 110px;
+        }
+        .card {
+            padding: 98px 66px;
+            border: 1px solid #ededed;
+            background-color: white;
+            box-shadow: 0 2px 12px 0 rgba(16, 16, 16, .08);
+            border-radius: 24px;
+            overflow: hidden;
+            transform-style: preserve-3d;
+            transition: box-shadow .3s, transform .3s;
+            img {
+                width: 167px;
+                display: inline-block;
+                margin-bottom: 1.625rem;
+            }
+            &:hover {
+                box-shadow: 0 6px 24px 0 rgba(16, 16, 16, .14);
+                color: #656565;
+                transform: translate3d(0, -5px, .01px);
+            }
+            .card-body {
+                padding: 0;
+            }
+        }
+    }
+}
+
+
+
+/* Override Bootstrap's default container width */
+@media (min-width: 1270px) {
+    .container {
+      max-width: 1270px;
+      padding-left: 24px;
+      padding-right: 24px;
+      transform: translate(0);
+    }
+  }
