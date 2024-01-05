@@ -58,5 +58,5 @@ document.getElementById('navbartoggle').addEventListener('click', function() {
 
     movingBlock.classList.toggle('active');
     icon.classList.toggle('close');
-  });
+});
       

@@ -676,7 +676,13 @@ footer {
         width: 100%;
     }
   }
-  
+  #cartPopup {
+    color: #121212;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.125em;
+  }
   .close-btn {
     font-size: 36px;
     color: white;
