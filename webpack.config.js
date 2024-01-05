@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  mode: 'development', // or 'production'
+  mode: 'production', // 'development' or 'production'
   entry: './src/js/main.js',
 
   stats: {
