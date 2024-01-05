@@ -1,4 +1,4 @@
-# Webpack Project
+# Task at AutomatedPros (using webpack)
 
 This is a simple project that uses Webpack to bundle your JavaScript and other assets. Follow the steps below to get started:
 
@@ -12,17 +12,18 @@ Before you begin, make sure you have [Node.js](https://nodejs.org/) installed on
 
 2. Run the following command to install the project dependencies:
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 ## Build
 
 1. Run the following command to build the project:
 
-    ```bash
-      npm run build
-    ```
+   ```bash
+     npm run build
+   ```
+
    This will generate the bundled files in the dist directory.
 
 ## Run Development Server
@@ -35,14 +36,9 @@ npm run dev
 
 This will start the server, and you can view the project in your browser at http://localhost:9000
 
-
 ## View HTML
 
 To view the HTML file, navigate to the src folder and locate the index.html file. You can open it in your preferred web browser to see the result.
-
-
-
-
 
 ## In this README file:
 
@@ -52,4 +48,3 @@ To view the HTML file, navigate to the src folder and locate the index.html file
 - The "Run Development Server" section instructs on how to start the development server with `npm run dev`.
 - The "View HTML" section guides the user to navigate to the `src` folder and open the `index.html` file in a web browser.
 - The "Additional Notes" section provides some extra information and tips.
-
