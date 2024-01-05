@@ -1,10 +1,10 @@
 const path = require('path');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  mode: 'production', // or 'production'
+  mode: 'development', // or 'production'
   entry: './src/js/main.js',
 
   stats: {
@@ -37,11 +37,11 @@ module.exports = {
     ],
     },
     plugins: [
-        // new HtmlWebpackPlugin({
-        //   template: './src/index.html',
-        //   // chunks: ['main'],
-        //   // filename: 'index.html',
-        // }),
+        new HtmlWebpackPlugin({
+          template: './src/index.html',
+          // chunks: ['main'],
+          // filename: 'index.html',
+        }),
         new MiniCssExtractPlugin({
           filename: 'main.css',
         }),
