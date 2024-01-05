@@ -27,32 +27,36 @@ window.addEventListener("scroll", function(){
 }, false);
 
   // popup
-    document.getElementById('openPopup').addEventListener('click', function() {
-        toggleContent();
-      });
+
+  function handleButtonClick() {
+    toggleContent();
+  }
+
+  document.getElementById('openPopup').addEventListener('click', handleButtonClick);
+  document.getElementById('cartPopup').addEventListener('click', handleButtonClick);
       
-      function toggleContent() {
-        var contentElement = document.getElementById('popupContainer');
-        if (contentElement.classList.contains('show')) {
-            contentElement.classList.remove('show');
-            contentElement.classList.add('hide');
-          } else {
-            contentElement.classList.remove('hide');
-            contentElement.classList.add('show');
-          }
-        }
-        document.getElementById('close-btn').addEventListener('click', function() {
-            var div = document.getElementById('popupContainer');
-            div.classList.remove('show');
-        });
+  function toggleContent() {
+    var contentElement = document.getElementById('popupContainer');
+    if (contentElement.classList.contains('show')) {
+        contentElement.classList.remove('show');
+        contentElement.classList.add('hide');
+      } else {
+        contentElement.classList.remove('hide');
+        contentElement.classList.add('show');
+      }
+    }
+    document.getElementById('close-btn').addEventListener('click', function() {
+        var div = document.getElementById('popupContainer');
+        div.classList.remove('show');
+    });
 
-    // Menu
+// Menu
 
-    document.getElementById('navbartoggle').addEventListener('click', function() {
-        var movingBlock = document.getElementById('movingBlock');
-        var icon = document.querySelector('.navbartoggler');
+document.getElementById('navbartoggle').addEventListener('click', function() {
+    var movingBlock = document.getElementById('movingBlock');
+    var icon = document.querySelector('.navbartoggler');
 
-        movingBlock.classList.toggle('active');
-        icon.classList.toggle('close');
-      });
+    movingBlock.classList.toggle('active');
+    icon.classList.toggle('close');
+  });
       
